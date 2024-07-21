@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$principal: #2f80ed;
+$secundario: #4f4f4f;
+$gray: #828282;
+$fondo: #242424;
+$fgris: #ebebeb;
+$fblanco: #ffffff;
+$fnegro: #000000;
+$fgrisblog: #e0e0e0;
+$fblueblog: #2f80ed;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $fondo;
+    color: $gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+    color: $fnegro;
+}
+
+h2 {
+    color: $fnegro;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: $fnegro;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+h4 {
+    color: $fnegro;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+progress {
+    width: 65%;
+    height: 20px;
+}
+
+.billytext {
+    font-size: 18px;
+}
+
+.black {
+    color: $fnegro;
+    font-weight: 500;
+}
+
+.textfecha {
+    font-size: 14px;
+    padding: 30px 0 15px;
+}
+
+.hobbietext {
+    color: $fnegro;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0 10px;
+}
+
+.padown {
+    padding-bottom: 25px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 65px 65px;
+
+    background-color: $fgris;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+
+    overflow: hidden;
+}
+
+.margen {
+    margin: 50px 0;
+}
+
+.containercolumn01 {
+    padding: 25px;
+    background-color: $fblanco;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1rem -1rem $gray;
+}
+
+.containercolumn02 {
+    margin: 20px 0;
+    padding: 25px;
+    background-color: $fblanco;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1rem -1rem $gray;
+}
+
+.especialidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.especialheight {
+    height: 160px;
+}
+
+.especialpad {
+    padding-bottom: 5px;
+}
+
+.flexexp {
+    display: flex;
+    gap: 30px;
+}
+
+.flexdiv {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.flexdirect {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.progreso {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.proyectoimg {
+    width: 322px;
+}
+
+.blogimg {
+    width: 467px;
+}
+
+.experienciaimg {
+    padding-top: 30px;
+    width: 84px;
+}
+
+.fa-envelope {
+    margin-right: 20px;
+}
+
+.fa-phone {
+    margin-right: 20px;
+}
+
+.textgris {
+    color: $fgrisblog;
+}
+
+.textblue {
+    color: $fblueblog;
+}
+
+.boton01 {
+    width: 130px;
+    height: 46px;
+    margin: 30px 10px 10px 0;
+    padding: 10px 20px;
+
+    background-color: $principal;
+    color: $fblanco;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.boton02 {
+    width: 130px;
+    height: 46px;
+    padding: 10px 20px;
+
+    background-color: transparent;
+    color: $principal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+    border: 1px solid $principal;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+/*BREAK POINTS*/
+
+@media (max-width: 1366px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .especialidad {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .flexdiv {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .proyectoimg {
+        width: 100%;
+    }
+    
+    .blogimg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .especialidad {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
